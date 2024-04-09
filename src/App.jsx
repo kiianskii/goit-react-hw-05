@@ -3,11 +3,6 @@ import { Route, Routes } from 'react-router-dom'
 import { lazy } from 'react'
 import Layout from './components/Layout/Layout'
 import HomePage from './pages/HomePage/HomePage'
-// import NotFoundPage from './pages/NotFoundPage/NotFoundPage'
-// import MoviesPage from './pages/MoviesPage/MoviesPage'
-// import MovieDetailsPage from './pages/MovieDetailsPage/MovieDetailsPage'
-// import MovieCast from './components/MovieCast/MovieCast'
-// import MovieReviews from './components/MovieReviews/MovieReviews'
 
 const MoviesPage = lazy(() => import('./pages/MoviesPage/MoviesPage'))
 const MovieDetailsPage = lazy(() => import('./pages/MovieDetailsPage/MovieDetailsPage'))

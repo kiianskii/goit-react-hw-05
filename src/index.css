@@ -46,16 +46,10 @@ button:focus-visible {
   justify-content: space-between;
   padding: 20px;
   align-items: center;
-  background-color: rgb(66, 66, 66);
+
   color: white;
   font-weight: bold;
   font-size: 1.5rem;
-  ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    color: white;
-  }
 }
 .active {
   color: rgb(143, 57, 255) !important;
@@ -65,4 +59,17 @@ button:focus-visible {
   font-size: 24px;
   color: white;
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+}
+
+.reviews {
+  margin-left: 50px;
 }

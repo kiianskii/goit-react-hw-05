@@ -19,7 +19,7 @@ function HomePage() {
 
 
   return (
-    <div className={s.users}>
+    <div className={s.movies}>
 			<h1 className={s.title}>Popular films</h1>
 			<MovieList movies={popularFilms} />
 		</div>

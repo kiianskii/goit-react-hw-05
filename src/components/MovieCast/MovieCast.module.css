@@ -1,0 +1,21 @@
+.img {
+  width: 250px;
+  height: 350px;
+  object-fit: contain;
+}
+
+.card {
+  border: 1px solid grey;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}

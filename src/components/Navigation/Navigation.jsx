@@ -1,5 +1,6 @@
 import clsx from "clsx"
 import { NavLink } from "react-router-dom"
+import s from "./Navigation.module.css"
 
 
 function Navigation() {
@@ -11,13 +12,13 @@ function Navigation() {
   return (
     <header className='navbar'>
 
-			<ul>
-				<li>
+			<ul className={s.list}>
+				<li className={s.item}>
 					<NavLink className={activeStyleLink} to='/'>
 						Home
 					</NavLink>
 				</li>
-				<li>
+				<li className={s.item}>
 					<NavLink className={activeStyleLink} to='/movies'>
 						Movies
 					</NavLink>

@@ -8,16 +8,16 @@ import MovieList from "../../components/MovieList/MovieList"
 function MoviesPage() {
     const [searchParams, setSearchParams] = useSearchParams()
     const [searchedFilms, setSearchedFilms] = useState([])
+    
 
 	const query = searchParams.get('query') || ''
-	console.log(query)
+
     const args = useMemo(() => ({ q: query }), [query])
     
 
 
     useEffect(() => {
         async function getSearchedMovies() {
-            console.log(args.q);
 
         const {results} = await fetchMoviesByName(args.q)
             setSearchedFilms(results)
